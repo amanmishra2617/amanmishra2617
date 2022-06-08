@@ -1,0 +1,222 @@
+<html>
+<head>
+<title> kitabiduniya.com </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 0px;
+  border: none;
+  font-size: 17px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.content{
+  max-width: 900px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 5px;
+  color: #333;
+  font-family: roboto,sans-serif;
+  height: 100%;
+  font-size: 15px;
+  line-height: 1.57142857;
+  font-weight: 400;
+}
+
+.container{
+   display: flex;
+   margin: auto;
+}
+
+.page{
+   width: 300px;
+   height: 600px;
+   margin: auto;
+}
+
+.img-page{
+   width: 300px;
+   height: 600px;
+   margin: auto;
+}
+
+.img{
+   width: 250px;
+   height: 150px;
+   margin: auto;
+}
+
+.contact-form-container{
+  width: 250px;
+  padding: 0rem;
+}
+
+.contact-form-container label{
+  width: 280px;
+  height: 30px;
+  line-height: 2.7rem;
+  font-size:16;
+  color: #666666;
+}
+
+.contact-form-container .input-field {
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: none;
+  border: 1px outset #666666;
+  outline: none;
+}
+
+.input-field::placeholder {
+  padding: 0.2rem;
+  color: #666666;
+}
+
+.submit-btn {
+  width: 118px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #F57C00;
+  border: 1px solid #666666;
+  border-radius: 3px;
+  font-size: 15px;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #F18B11 ;
+  border: 1px solid #F18B11 ;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="../Home.html">Home</a>
+  <a href="Search.html">Search</a>
+  <a class="active" href="Contact.html">Contact</a>
+  <a href="about.html">About Us</a>
+  <a href="Feedback.html">Feedback</a>
+  <div class="search-container"><button type="submit">Submit</button></div>
+  <input type="text" placeholder="Search..">
+</div>
+
+<div class="content">
+   <div class="container">
+      <div class="page">
+         <div> <h2> Contact Us </h2>
+               <hr>
+         </div>
+         <div font-size="16" color="#2F2E41"> Leave Us A Message </div>
+         <div class="contact-form-container">
+            <form>
+               <div>
+                  <label> Full Name: </label>
+                  <input type="text" placeholder="Write your Full Name" class="input-field" required />
+               </div>
+               <div>
+                  <label> Email Address: </label>
+                  <input type="email" placeholder="Type your Email address" class="input-field" required />
+               </div>
+               <div>
+                  <label> Subject: </label>
+                  <input type="text" placeholder="Write your subject" class="input-field" required />
+               </div>
+               <div>
+                  <label> Write your message: </label>
+                  <textarea 
+                     type="string" 
+                     rows="5" 
+                     placeholder="Write your message here..."
+                     class="input-field" 
+                     required >
+                  </textarea>
+               </div>
+               <input
+                  type="submit"
+                  value="Send Message"
+                  id="submit-btn"
+                  class="submit-btn"
+               />
+            </form>
+         </div>
+      </div>
+      <div class="img-page">
+         <img src="Images/contact-image.png" alt="contact-image" class="img">
+         <div align="left" color="#2F2E41"><h2> Kitabiduniya Pvt Ltd. </h2></div>
+         <p> Thanks for reaching out to Kitabiduniya. In order to ensure you receive a 
+             quick reply, please fill out our Contact Us form.
+         </p>
+         <p> For partnerships, promotional opportunities, and advertising inquiries, 
+             please email us at:<a style="color:#DE2454;text-decoration:none" href="mailto: 001amanmishra@gmail.com">
+             001amanmishra@gmail.com </a>
+         </p>
+         <p> Interested in joining our team? Email us at 
+             <a style="color:#DE2454;text-decoration:none" href="mailto: 001amanmishra@gmail.com">
+             001amanmishra@gmail.com </a> </p>
+      </div>
+   </div>
+</body>
+</html>
